@@ -1,0 +1,130 @@
+/* ========================
+Start Main Styles
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Mono", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #fff;
+    color: #333333;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    margin: auto;
+    width: 85%;
+    padding: 20px;
+}
+
+img {
+    width: 90%;
+}
+
+/*=============================
+    start Header  
+=============================*/
+.header {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* =============================
+    start App styles  
+===============================*/
+.app-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+    padding: 30px;
+}
+
+.app-text,
+.app-image {
+    flex: 1 1 50%;
+    width: 50%;
+}
+
+.app-text .app-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+.app-text .app-desc {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+    margin: 35px 0;
+}
+
+.app-btn {
+    display: inline-block;
+    background-color: #333333;
+    padding: 20px 40px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/*======================
+    start Footer 
+====================*/
+.footer {
+    padding: 30px 0;
+}
+
+/*========================================= 
+    start Media Queries for Responsive 
+==================================== */
+@media (min-width: 1200px) {
+    .app-text {
+        padding-right: 40px;
+    }
+
+    .app-text .app-desc {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .app-text,
+    .app-image {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .app-text .app-title {
+        font-size: 48px;
+    }
+
+    .app-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
